@@ -1,0 +1,12 @@
+app:
+  run_mode: debug                 # gin debug, release, test
+  addr: :9091                     # HTTP
+mysql:
+  name: db1
+  addr: 127.0.0.1:3306
+  username: root
+  password: 11111
+  show_log: true                  # Print SQL log
+  max_idle_conn: 10               # Maximum number of idle connections
+  max_open_conn: 60               # The maximum number of open connections, which needs to be less than the number of max_connections in the database configuration
+  conn_max_life_time: 60          # The maximum time for connection reuse, in minutes
